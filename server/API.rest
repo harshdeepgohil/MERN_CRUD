@@ -1,0 +1,43 @@
+//INSERT
+POST  http://localhost:3001/user/AddUser
+Content-Type: application/json
+
+{
+  "name":"raj",
+  "phone":12345678,
+  "email":"raj@gmail.com",
+  "password":"raj123"
+}
+
+
+###
+
+PUT http://localhost:3001/user/AddUser/66f2f650536a96cebbc16d47
+Content-Type: application/json
+
+{
+  "_id":"66f2f650536a96cebbc16d47",
+  "name":"gohil",
+  "phone":12345,
+  "email":"gohil@gmail.com",
+  "password":"gohil123"
+}
+
+
+
+###
+
+//DELETE BY ID
+DELETE  http://localhost:3001/user/DeleteUser/66f2e1bdab855b2cf7a5c2f0
+
+###
+
+GET http://localhost:3001/user/SearchUser/harsh
+
+###
+//DISPLAY ALL
+GET http://localhost:3001/user/DispUser
+
+
+###
+GET http://localhost:3001/user/AddUser/66f2f650536a96cebbc16d47
